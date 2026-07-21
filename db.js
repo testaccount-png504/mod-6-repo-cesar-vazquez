@@ -1,4 +1,4 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb+srv://cesar:1212_865@cluster0.a2r4bf4.mongodb.net/?appName=Cluster0",{useNewURLParser: true})
+mongoose.connect("mongodb://localhost:27017/songs")
 
 module.exports = mongoose;
