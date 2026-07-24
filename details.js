@@ -1,4 +1,4 @@
-addEventListener("DOMcontentLoaded", async function(){
+addEventListener("DOMcontentLoaded", async function () {
     const urlparam = new URLSearchParams(window.location.search)
     const songid = urlparam.get('id')
     console.log('songid')
@@ -10,14 +10,16 @@ addEventListener("DOMcontentLoaded", async function(){
     let heading = ""
     heading += $(song.title)
     document.querySelector("h1").innerHTML = heading
-    
+
     let html = ""
-    html +=
-    <h2>title - ${songs.title}</h2>
-    <h3>artist - ${songs.title}</h3>
-    <p>title - ${songs.title}</p>
-    <p>title - ${songs.title}</p>
-    
+    html += `
+        <h2>title - ${songs.title}</h2>
+        <h3>artist - ${songs.title}</h3>
+        <p>title - ${songs.title}</p>
+        <p>title - ${songs.title}</p>
+    `
+
+
     document.querySelector("div").innerHTML = html
 
 
